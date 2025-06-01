@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="x-icon" href="img/JU logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payment Details</title>
+  </head>
+
+  <body class="h-full overflow-hidden">
+    <!-- navbar part -->
+    <nav class="bg-indigo-600 mt-3">
+      <ul class="flex justify-end space-x-3 mx-10 items-center h-14">
+        <li>
+          <img
+            src="img/user-image.png"
+            alt=""
+            class="w-10 mix-blend-multiply"
+          />
+        </li>
+        <li class="text-white">Sanjida Akhter</li>
+      </ul>
+    </nav>
+
+    <!-- main page -->
+    <div class="bg-indigo-100 h-screen">
+      <!-- search bar -->
+      <div class="pt-2 mr-2">
+        <div class="flex relative border border-black w-[500px] ml-[1020px]">
+          <input
+            type="text"
+            name="Search"
+            id=""
+            placeholder="Search..."
+            class="h-12 text-lg w-[500px] pl-3"
+          />
+          <span
+            class="absolute inset-y-0 right-0 flex items-center bg-gray-400 w-12 pl-3 pointer-events-none cursor-pointer"
+          >
+            <svg
+              class="h-6 w-6 fill-black space-x-1"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+            >
+              <path
+                d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- welcome part -->
+      <div class="h-[120px] m-4 border border-black">
+        <p
+          class="text-blue-700 text-3xl flex justify-center mt-3 font-semibold"
+        >
+          Welcome to Cloud Campus24 Online Fees Payment System.
+        </p>
+        <p class="text-gray-600 text-lg flex justify-center">
+          To proceed please click Pay button from following options
+        </p>
+        <p class="text-gray-600 text-lg flex justify-center">
+          For payment related query please call
+          <a href="tel:+8801853415354" class="text-blue-500 hover:underline"
+            >+8801853415354</a
+          >
+        </p>
+      </div>
+
+      <!-- 3 cards -->
+      <div class="h-[200px] m-4 border border-black bg-white">
+        <div class="flex justify-around gap-4 items-center">
+          <!-- card 1 -->
+          <div class="my-5 w-[350px]">
+            <div class="bg-blue-400 flex items-center justify-around">
+              <div class="m-3">
+                <p class="text-white text-lg">Amount</p>
+                <p class="text-white text-[40px] font-bold">1040.00</p>
+              </div>
+              <div class="m-[25px]">
+                <i
+                  class="fa-solid fa-money-check-dollar text-[80px] text-blue-800"
+                ></i>
+              </div>
+            </div>
+            <div class="bg-blue-800 h-[25px]"></div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="my-5 w-[350px]">
+            <div class="bg-slate-200 flex items-center justify-around">
+              <div class="m-3">
+                <p class="text-lg">Sanjida Akhter</p>
+                <p class="text-[40px] font-bold">Roll:2036</p>
+              </div>
+              <div class="m-[25px]">
+                <i
+                  class="fa-solid fa-user-graduate text-[80px] text-slate-500"
+                ></i>
+              </div>
+            </div>
+            <div class="bg-slate-500 h-[25px]"></div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="my-5 w-[350px]">
+            <div class="bg-slate-200 flex items-center justify-around">
+              <div class="m-3">
+                <p class="text-lg">Payment To</p>
+                <p class="text-[40px] font-bold">JU</p>
+              </div>
+              <div class="m-[25px]">
+                <i
+                  class="fa-solid fa-building-columns text-[80px] text-slate-500"
+                ></i>
+              </div>
+            </div>
+            <div class="bg-slate-500 h-[25px]">
+              <p class="text-white flex justify-center font-semibold">
+                Jahangirnagar University
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- table and bkash part -->
+      <div class="m-4 flex">
+        <!-- table part -->
+        <div>
+          <table class="min-w-full">
+            <!-- table headings -->
+            <thead>
+              <tr>
+                <th class="py-2 px-3 bg-blue-700 text-white">#</th>
+                <th class="py-2 px-3 bg-blue-700 text-white">Month</th>
+                <th class="py-2 px-3 bg-blue-700 text-white">Year</th>
+                <th class="py-2 px-3 bg-blue-700 text-white">Amount</th>
+              </tr>
+            </thead>
+
+            <!-- table data 3 rows -->
+            <tbody class="divide-y divide-gray-200">
+              <!-- row 1 -->
+              <tr class="bg-white">
+                <td class="py-2 px-3">1</td>
+                <td class="py-2 px-3">June</td>
+                <td class="py-2 px-3">2023</td>
+                <td class="py-2 px-3">20.00</td>
+              </tr>
+
+              <!-- row 2 -->
+              <tr class="bg-white">
+                <td class="py-2 px-3">2</td>
+                <td class="py-2 px-3">July</td>
+                <td class="py-2 px-3">2023</td>
+                <td class="py-2 px-3">20.00</td>
+              </tr>
+
+              <!-- row 3 -->
+              <tr class="bg-white">
+                <td class="py-2 px-3">3</td>
+                <td class="py-2 px-3">Exam Fees</td>
+                <td class="py-2 px-3">2023</td>
+                <td class="py-2 px-3">1000.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- bkash part -->
+        <div class="ml-3 w-full">
+          <!-- bkash heading -->
+          <div class="bg-gray-300">
+            <p class="text-[30px] ml-4 mt-4">BKash</p>
+          </div>
+
+          <!-- bkash, nagad and button -->
+          <div class="flex justify-around bg-white">
+            <!-- bkash image -->
+            <div class="">
+              <img
+                src="img/bkash.png"
+                alt=""
+                class="w-[100px] h-[100px] ml-5 mr-5"
+              />
+            </div>
+
+            <!-- nagad image -->
+            <div>
+              <img
+                src="img/nagad.png"
+                alt=""
+                class="w-[100px] h-[100px] ml-5 mr-5"
+              />
+            </div>
+
+            <!-- pay ith bkash/nagad button -->
+            <a href="" class="">
+              <button
+                class="text-xl text-white bg-purple-600 py-3 my-5 hover:bg-purple-900 w-60 mx-auto shadow-md"
+              >
+                Pay With BKash/Nagad
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

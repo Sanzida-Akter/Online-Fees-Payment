@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="img/JU logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="flex h-screen bg-white">
+      <!-- Sidebar -->
+      <div class="w-1/4 p-4 text-center bg-blue-900 text-white">
+        <!-- dashboard heading-->
+        <div
+          class="p-2.5 mt-1 flex items-center rounded-md bg-black hover:bg-orange-600"
+        >
+          <img src="img/dashboard.png" alt="" />
+          <h1 class="text-[26px] ml-3 text-xl text-gray-200 font-bold">
+            Dashboard
+          </h1>
+          <i class="bi bi-chevron-down ml-auto cursor-pointer"></i>
+        </div>
+
+        <!-- other parts of the sidebar -->
+        <div class="mt-4">
+          <!-- student account -->
+          <div
+            class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+          >
+            <img src="img/account student.png" alt="" />
+            <span
+              class="text-[26px] ml-4 text-gray-200 whitespace-nowrap font-bold"
+              >Student Account</span
+            >
+            <i class="bi bi-chevron-right ml-auto cursor-pointer"></i>
+          </div>
+
+          <!-- fees payment -->
+          <div
+            class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+          >
+            <img src="img/fees payment.png" alt="" />
+            <a href="feepayment.html"
+              ><span class="text-[26px] ml-5 text-gray-200 font-bold"
+                >Fees Payment</span
+              ></a
+            >
+            <i class="bi bi-chevron-right ml-auto cursor-pointer"></i>
+          </div>
+
+          <!-- application -->
+          <div
+            class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+          >
+            <img src="img/application.png" alt="" />
+            <span class="text-[26px] ml-6 text-gray-200 font-bold"
+              >Application</span
+            >
+            <i class="bi bi-chevron-right ml-auto cursor-pointer"></i>
+          </div>
+
+          <!-- diary and tasks -->
+          <div
+            class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+          >
+            <img src="img/diary & tasks.png" alt="" />
+            <span class="text-[26px] ml-5 text-gray-200 font-bold"
+              >Diary & Task</span
+            >
+            <i class="bi bi-chevron-right ml-auto cursor-pointer"></i>
+          </div>
+
+          <!-- library -->
+          <div
+            class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600"
+          >
+            <img src="img/library.png" alt="" />
+            <span class="text-[26px] ml-5 text-gray-200 font-bold"
+              >Library</span
+            >
+            <i class="bi bi-chevron-right ml-auto cursor-pointer"></i>
+          </div>
+        </div>
+
+        <!-- footer of the sidebar -->
+        <div
+          class="absolute bottom-0 p-2 text-white text-base ml-6 text-[20px]"
+        >
+          © 2023 Jahangirnagar University
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="w-3/4 p-4 overflow-y-auto">
+        <!-- 6 cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <!-- Card 1 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-blue-800 text-center bg-blue-900 font-semibold text-white"
+            >
+              Attendence
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              80%
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-blue-800 text-center bg-blue-900 font-semibold text-white"
+            >
+              Full calendar here >
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-red-600 text-center bg-red-700 font-semibold text-white"
+            >
+              Result
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              Not published yet
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-red-600 text-center bg-red-700 font-semibold text-white"
+            >
+              View full results >
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-green-600 text-center bg-green-700 font-semibold text-white"
+            >
+              To Pay
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              2038.00
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-green-600 text-center bg-green-700 font-semibold text-white"
+            >
+              All Payments >
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-orange-500 text-center bg-orange-500 font-semibold text-white"
+            >
+              Class Routine
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              No Class Today
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-orange-500 text-center bg-orange-500 font-semibold text-white"
+            >
+              Full Schedule>
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-sky-500 text-center bg-sky-500 font-semibold text-white"
+            >
+              Assignments
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              Hurray! Nothing to submit
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-sky-500 text-center bg-sky-500 font-semibold text-white"
+            >
+              View All Assignments >
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="rounded-md p-4 h-178 w-281 flex flex-col">
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-black font-semibold text-white"
+            >
+              Read some Books
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-white font-semibold"
+            >
+              New: 15 books
+            </p>
+            <p
+              class="text-xl px-4 h-12 border py-2 border-black text-center bg-black font-semibold text-white"
+            >
+              Go to Library >
+            </p>
+          </div>
+        </div>
+
+        <!-- calender and important notice part -->
+        <div class="flex gap-10 my-16">
+          <!-- calender start -->
+          <div class="w-2/3 h-auto ml-4 p-4 border border-gray-200">
+            <!-- month name -->
+            <div class="text-center mb-4">
+              <h1 class="text-2xl font-semibold">JANUARY</h1>
+            </div>
+
+            <!-- week days name -->
+            <div class="grid grid-cols-7 gap-2 text-center">
+              <div class="bg-red-700 p-2 text-white font-semibold">Sun</div>
+              <div class="p-2 bg-black text-white font-semibold">Mon</div>
+              <div class="bg-black text-white p-2 font-semibold">Tue</div>
+              <div class="bg-black text-white p-2 font-semibold">Wed</div>
+              <div class="bg-black text-white p-2 font-semibold">Thu</div>
+              <div class="bg-black text-white p-2 font-semibold">Fri</div>
+              <div class="bg-red-700 p-2 text-white font-semibold">Sat</div>
+            </div>
+
+            <!-- days of the month -->
+            <div class="grid grid-cols-7 gap-2 mt-2 text-center">
+              <div class="text-red-200 p-2 font-semibold">29</div>
+              <div class="text-gray-300 p-2 font-semibold">30</div>
+              <div class="text-gray-300 p-2 font-semibold">31</div>
+              <div class="bg-white p-2 font-semibold">1</div>
+              <div class="bg-white p-2 font-semibold">2</div>
+              <div class="bg-white p-2 font-semibold">3</div>
+              <div class="text-red-600 p-2 font-semibold">4</div>
+              <div class="text-red-600 p-2 font-semibold">5</div>
+              <div class="bg-white p-2 font-semibold">6</div>
+              <div class="bg-white p-2 font-semibold">7</div>
+              <div class="bg-white p-2 font-semibold">8</div>
+              <div class="bg-white p-2 font-semibold">9</div>
+              <div class="bg-white p-2 font-semibold">10</div>
+              <div class="text-red-600 p-2 font-semibold">11</div>
+              <div class="text-red-600 p-2 font-semibold">12</div>
+              <div class="bg-white p-2 font-semibold">13</div>
+              <div class="bg-white p-2 font-semibold">14</div>
+              <div class="bg-white p-2 font-semibold">15</div>
+              <div class="bg-white p-2 font-semibold">16</div>
+              <div class="bg-white p-2 font-semibold">17</div>
+              <div class="text-red-600 p-2 font-semibold">18</div>
+              <div class="text-red-600 p-2 font-semibold">19</div>
+              <div class="bg-white p-2 font-semibold">20</div>
+              <div class="bg-white p-2 font-semibold">21</div>
+              <div class="bg-white p-2 font-semibold">22</div>
+              <div class="bg-white p-2 font-semibold">23</div>
+              <div class="bg-white p-2 font-semibold">24</div>
+              <div class="text-red-600 p-2 font-semibold">25</div>
+              <div class="text-red-600 p-2 font-semibold">26</div>
+              <div class="bg-white p-2 font-semibold">27</div>
+              <div class="bg-white p-2 font-semibold">28</div>
+              <div class="bg-white p-2 font-semibold">29</div>
+              <div class="bg-white p-2 font-semibold">30</div>
+              <div class="bg-white p-2 font-semibold">31</div>
+              <div class="text-red-200 p-2 font-semibold">1</div>
+            </div>
+          </div>
+
+          <!-- important notice part -->
+          <div class="w-1/3 mr-4 bg-white border border-gray-300 shadow-md">
+            <div
+              class="h-12 text-center text-yellow-400 font-semibold bg-blue-950 py-1 text-2xl"
+            >
+              <p>Important Notice!</p>
+            </div>
+            <p class="text-base p-3 text-gray-400">Nothing to show here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
