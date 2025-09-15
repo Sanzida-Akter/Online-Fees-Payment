@@ -1,24 +1,25 @@
 A web-based system that enables students to pay their fees online securely, track payment history, and generate digital receipts. This project is designed for educational institutions to simplify the fee collection process.
 
-🚀 Features
 
-Student login & registration system
+# 🚀 Features
 
-Online fee payment with payment gateway integration (can be added/tested with sandbox)
+- Student login & registration system
 
-Admin dashboard to manage students and payments
+- Online fee payment with payment gateway integration (can be added/tested with sandbox)
 
-Secure transaction management
+- Admin dashboard to manage students and payments
 
-Generate and download payment receipts
+- Secure transaction management
 
-Responsive UI with HTML, CSS, and JavaScript
+- Generate and download payment receipts
 
-🛠️ Tech Stack
+- Responsive UI with HTML, CSS, and JavaScript
 
-Frontend: HTML, CSS, JavaScript
+# 🛠️ Tech Stack
 
-Backend: PHP
+***Frontend:*** HTML, CSS, JavaScript
 
-Database: MySQL
+***Backend:*** PHP
+
+***Database:*** MySQL
 
